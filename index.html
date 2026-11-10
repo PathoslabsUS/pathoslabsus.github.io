@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pathos Labs | Automated market making for regulated event markets</title>
+<meta name="description" content="Pathos Labs builds and operates automated market-making systems for regulated U.S. event-contract exchanges: exchange connectivity, market data, pricing models and risk controls.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pathos Labs">
+<meta property="og:description" content="Automated market making for regulated event markets.">
+<meta property="og:url" content="https://pathoslabsus.github.io/">
+<link rel="canonical" href="https://pathoslabsus.github.io/">
+<meta name="theme-color" content="#123a5c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23123a5c'/%3E%3Cpath fill-rule='evenodd' d='M10 23V9h7.2a4.6 4.6 0 0 1 0 9.2h-3.8V23zM13.4 12v3.2h3.8a1.6 1.6 0 0 0 0-3.2z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #fbfaf7; --ink: #15202b; --muted: #55606b; --line: #e3e0d8; --accent: #123a5c; --card: #ffffff; --mark: #123a5c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f151b; --ink: #e9edf1; --muted: #9aa6b2; --line: #26313b; --accent: #8fc1ea; --card: #151d25; --mark: #1d5a8c; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 26px 0; border-bottom: 1px solid var(--line); }
+  .mark { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .01em; font-size: 18px; }
+  .mark svg { width: 30px; height: 30px; flex: none; }
+  .mark svg rect { fill: var(--mark); }
+  .hero { padding: 76px 0 60px; }
+  h1 { font-size: clamp(32px, 6.2vw, 50px); line-height: 1.12; letter-spacing: -.02em; margin: 0 0 20px; font-weight: 700; text-wrap: balance; }
+  .lede { font-size: 19px; color: var(--muted); max-width: 58ch; margin: 0; }
+  section { padding: 44px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .14em; color: var(--accent); margin: 0 0 22px; font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+  .card h3 { margin: 0 0 8px; font-size: 17px; font-weight: 700; }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  .facts { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+  .facts li { padding-left: 20px; position: relative; color: var(--muted); }
+  .facts li::before { content: ""; position: absolute; left: 0; top: .68em; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+  .facts strong { color: var(--ink); font-weight: 650; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 52px; color: var(--muted); font-size: 14.5px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="mark">
+      <svg viewBox="0 0 32 32" role="img" aria-label="Pathos Labs"><rect width="32" height="32" rx="7"/><path fill-rule="evenodd" d="M10 23V9h7.2a4.6 4.6 0 0 1 0 9.2h-3.8V23zM13.4 12v3.2h3.8a1.6 1.6 0 0 0 0-3.2z" fill="#fff"/></svg>
+      Pathos Labs
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Automated market making for regulated event markets.</h1>
+    <p class="lede">Pathos Labs builds and operates trading systems that quote continuous two-sided prices on regulated U.S. event-contract exchanges.</p>
+  </div>
+
+  <section>
+    <h2>What we do</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Market making</h3>
+        <p>Two-sided liquidity across sports, economic and financial event contracts, priced from quantitative fair-value models.</p>
+      </div>
+      <div class="card">
+        <h3>Trading infrastructure</h3>
+        <p>Low-latency exchange connectivity, order management and risk controls, written in Rust and Python.</p>
+      </div>
+      <div class="card">
+        <h3>Market data and research</h3>
+        <p>Continuous recording of exchange and reference data, with replay tooling to test changes before they trade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How we work</h2>
+    <ul class="facts">
+      <li><strong>Regulated venues only.</strong> We trade on exchanges that operate under U.S. regulatory oversight.</li>
+      <li><strong>Automation with limits.</strong> Every strategy runs inside hard position, loss and price limits.</li>
+      <li><strong>Built on AWS.</strong> Our trading, recording and research systems run on Amazon Web Services.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Pathos Labs. All rights reserved.</div>
+</footer>
+</body>
+</html>
